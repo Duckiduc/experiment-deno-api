@@ -62,5 +62,5 @@ selecting the `JSON` format.
 
 **Access to file**
 
-Deno is built with security in mind as it always asks for file permission.
-(And PORT access)
+Deno is built with security in mind as it always asks for file permission. (And
+PORT access)
