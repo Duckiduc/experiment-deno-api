@@ -59,3 +59,8 @@ The main 2 according to my research are:
 
 While creating a POST request in Postman I added to the body raw data without
 selecting the `JSON` format.
+
+**Access to file**
+
+Deno is built with security in mind as it always asks for file permission.
+(And PORT access)
