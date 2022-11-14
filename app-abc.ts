@@ -17,7 +17,7 @@ async function createUser(ctx: Context) {
 
 app.post("/user", createUser);
 
-async function getUsers(ctx: Context) {
+async function readUser(ctx: Context) {
   // Params inside request url
   const { id } = ctx.params
 
@@ -36,7 +36,7 @@ async function getUsers(ctx: Context) {
   }
 }
 
-app.get("/users/:id", getUsers);
+app.get("/users/:id", readUser);
 
 function getUser(ctx: Context) {
   const { id } = ctx.params;
