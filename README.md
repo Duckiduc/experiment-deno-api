@@ -35,7 +35,7 @@ run `deno run --allow-net allow-read allow-write app-abc.ts`
 
 ### Testing the API
 
-Easily test the API by importing `experiment-deno-api.json` into Postman.
+Easily test the API by importing `experiment-deno-api.postman_collection.json` into Postman.
 
 ---
 
