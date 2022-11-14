@@ -1,7 +1,6 @@
-import { generateToken } from './../utils/token.ts';
-import { Context } from 'https://deno.land/x/abc@v1.3.3/mod.ts';
+import { generateToken } from "./../utils/token.ts";
+import { Context } from "https://deno.land/x/abc@v1.3.3/mod.ts";
 import User from "../interfaces/user.ts";
-
 
 export async function createUser(ctx: Context) {
   // Body of request
@@ -43,9 +42,11 @@ export async function writeUser(ctx: Context) {
   // Get user as User
   const user = (await ctx.body) as User;
 
-  const token = await generateToken()
+  const token = await generateToken();
 
-  const users: User[] = JSON.parse(await Deno.readTextFile("./data/users.json"));
+  const users: User[] = JSON.parse(
+    await Deno.readTextFile("./data/users.json"),
+  );
 
   const userExists = users.find((u) => u.id === user.id);
 

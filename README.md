@@ -35,7 +35,8 @@ run `deno run --allow-net allow-read allow-write app-abc.ts`
 
 ### Testing the API
 
-Easily test the API by importing `experiment-deno-api.postman_collection.json` into Postman.
+Easily test the API by importing `experiment-deno-api.postman_collection.json`
+into Postman.
 
 ---
 
@@ -73,4 +74,5 @@ PORT access)
 
 **File path**
 
-Wherever you are in the project, using a path in Deno will start at the root of the project. Meaning there is no need for `../`.
+Wherever you are in the project, using a path in Deno will start at the root of
+the project. Meaning there is no need for `../`.

@@ -1,5 +1,10 @@
 import { Application } from "https://deno.land/x/abc@v1.3.3/mod.ts";
-import { createUser,readUser,writeUser,getUser } from "./controllers/users.ts";
+import {
+  createUser,
+  getUser,
+  readUser,
+  writeUser,
+} from "./controllers/users.ts";
 
 // Using abc for API routes
 
