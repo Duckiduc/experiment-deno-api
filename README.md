@@ -27,6 +27,12 @@ Visit [Deno's website](https://deno.land/#installation)
 
 ---
 
+## Start the project easily (if you want to)
+
+run `deno run --allow-net allow-read allow-write app-abc.ts`
+
+---
+
 ### Testing the API
 
 Easily test the API by importing `experiment-deno-api.json` into Postman.
@@ -64,3 +70,7 @@ selecting the `JSON` format.
 
 Deno is built with security in mind as it always asks for file permission. (And
 PORT access)
+
+**File path**
+
+Wherever you are in the project, using a path in Deno will start at the root of the project. Meaning there is no need for `../`.
