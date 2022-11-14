@@ -47,3 +47,15 @@ content below:
   "deno.enable": true
 }
 ```
+
+**Use middleware framework for handling requests**
+
+The main 2 according to my research are:
+
+- (The one I am going to use) `abc` which is similar to `Express.js`
+- `Oak` <== to explore
+
+**Note to myself: Select format in Postman**
+
+While creating a POST request in Postman I added to the body raw data without
+selecting the `JSON` format.

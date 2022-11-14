@@ -1,9 +1,9 @@
 import { serve } from "https://deno.land/std@0.136.0/http/server.ts";
 
-const PORT = 8000
+const PORT = 8000;
 
 function getUser(path: URL): Response {
-  const userId = path.searchParams.get("u")
+  const userId = path.searchParams.get("u");
   if (userId !== null && userId !== "") {
     // Insert DB search here
     const body = JSON.stringify({ userId, message: "User found" });
@@ -28,16 +28,16 @@ function getUser(path: URL): Response {
 function requestHandler(req: Request): Response {
   const body = JSON.stringify({ message: "Successfully created" });
 
-  const { url } = req
+  const { url } = req;
 
-  const newUrl = new URL(url)
+  const newUrl = new URL(url);
 
   // Using simple routing
-  if (newUrl.pathname === '/user' ) {
-    return getUser(newUrl)
+  if (newUrl.pathname === "/user") {
+    return getUser(newUrl);
   }
 
-  if (newUrl.pathname === '/about' ) {
+  if (newUrl.pathname === "/about") {
     return new Response(`About ${req.url}`);
   }
 
@@ -48,7 +48,6 @@ function requestHandler(req: Request): Response {
       "content-type": "application/json",
     },
   });
-
 }
 
 serve(requestHandler, { port: PORT });
