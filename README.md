@@ -5,7 +5,7 @@ This is my take on Deno. I'll document in this README the things that I find rel
 
 # Deno
 
-<img align="right" src=docs/images/deno3.png height="150px">
+<img align="right" src="https://deno.land/logo.svg?__frsh_c=3jp2spaxhx80" height="150px">
 
 Deno is a _simple_, _modern_ and _secure_ runtime for **JavaScript** and
 **TypeScript** that uses V8 and is built in Rust.
