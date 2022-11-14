@@ -1,11 +1,14 @@
 import { Application, Context } from "https://deno.land/x/abc@v1.3.3/mod.ts";
 import User from "./interfaces/user.ts";
+import { generateToken } from "./token.ts";
 
 // Using abc for API routes
 
 const app = new Application();
 
 const PORT = 8080;
+
+const token = await generateToken()
 
 async function createUser(ctx: Context) {
   // Body of request
