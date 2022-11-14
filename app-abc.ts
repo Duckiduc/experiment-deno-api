@@ -15,6 +15,14 @@ async function createUser(ctx: Context) {
 
 app.post("/user", createUser);
 
+async function getUsers(ctx: Context) {
+  const users = await Deno.readTextFile('./users.json');
+
+  return ctx.json({ users, message: "Users"}, 200);
+}
+
+app.get("/users", getUsers);
+
 function getUser(ctx: Context) {
   const { id } = ctx.params;
 
