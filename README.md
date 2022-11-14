@@ -1,7 +1,7 @@
 # Experiment Deno API
 
-Deno is kinda hot right now so I had to get a taste of it.
-This is my take on Deno. I'll document in this README the things that I find relevant. 
+Deno is kinda hot right now so I had to get a taste of it. This is my take on
+Deno. I'll document in this README the things that I find relevant.
 
 # Deno
 
@@ -37,8 +37,10 @@ Easily test the API by importing `experiment-deno-api.json` into Postman.
 
 **Deno with VSCode**
 
-As everything is in TypeScript with Deno including imports, I had errors and warning when importing from a TS file according to my pre-existant Linter.
-I had to add a `settings.json` file inside the `.vscode` folder I created with the content below:
+As everything is in TypeScript with Deno including imports, I had errors and
+warning when importing from a TS file according to my pre-existant Linter. I had
+to add a `settings.json` file inside the `.vscode` folder I created with the
+content below:
 
 ```json
 {
